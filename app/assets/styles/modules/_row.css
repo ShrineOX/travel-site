@@ -1,0 +1,11 @@
+.row {
+  @mixin atMedium {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 3rem;
+
+    &__right {
+      align-self: center;
+    }
+  }
+}

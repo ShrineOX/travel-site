@@ -1,0 +1,51 @@
+.large-hero {
+  position: relative;
+  border-bottom: 1rem solid $color-primary;
+
+  &__image {
+    display: block;
+  }
+
+  &__text-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    font-weight: 300;
+  }
+
+  &__title {
+    font-size: 4rem;
+    color: $color-primary;
+    font-weight: inherit;
+    margin-bottom: 0;
+    @mixin atSmall {
+      font-size: 4.5rem;
+    }
+    @mixin atMedium {
+      font-size: 5.5rem;
+    }
+  }
+
+  &__subtitle {
+    font-size: 2rem;
+    font-weight: inherit;
+    color: $color-primary;
+    margin: 0;
+
+    @mixin atSmall {
+      font-size: 3rem;
+    }
+  }
+
+  &__description {
+    color: #fff;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+
+    @mixin atSmall {
+      font-size: 1.875rem;
+    }
+  }
+}

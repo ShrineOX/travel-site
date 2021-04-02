@@ -1,0 +1,31 @@
+.page-section {
+  &--blue {
+    background-color: $color-primary;
+  }
+}
+
+.our-beginning {
+  &__img--1,
+  &__img--2 {
+    width: 100%;
+    max-width: 90rem;
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__img--1 {
+    margin-bottom: 1rem;
+    @mixin atSmall {
+      margin-bottom: 3rem;
+    }
+    @mixin atMedium {
+      margin-bottom: 5rem;
+    }
+  }
+
+  @mixin atMedium {
+    p {
+      font-size: 1.8rem;
+    }
+  }
+}

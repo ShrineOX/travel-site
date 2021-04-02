@@ -1,0 +1,22 @@
+$color-primary: #2f5572;
+$color-orange: #d59541;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+}
