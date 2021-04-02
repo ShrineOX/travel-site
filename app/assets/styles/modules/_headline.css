@@ -14,6 +14,9 @@
   &--orange {
     color: $color-orange;
   }
+  &--white {
+    color: #fff;
+  }
 
   &--small {
     font-size: 2rem;
@@ -29,6 +32,10 @@
   }
   &--light {
     font-weight: 100;
+  }
+
+  &--font-large {
+    font-size: 3.5rem;
   }
   strong {
     font-weight: 400;

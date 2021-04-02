@@ -13,6 +13,12 @@
     margin: 0 auto;
   }
 
+  a:link,
+  a:visited {
+    color: $color-orange;
+    font-weight: 600;
+  }
+
   &__img--1 {
     margin-bottom: 1rem;
     @mixin atSmall {
@@ -27,5 +33,130 @@
     p {
       font-size: 1.8rem;
     }
+  }
+}
+
+/* FEATURE SECTION  */
+.features {
+  color: #fff;
+
+  &__content {
+    @mixin atMedium {
+      display: grid;
+      grid-template-columns: auto auto;
+      column-gap: 6rem;
+    }
+  }
+
+  &__heading-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1rem;
+  }
+  img {
+    height: 5rem;
+    width: 5rem;
+  }
+  &__item {
+    max-width: 40rem;
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+      margin-bottom: 0;
+    }
+
+    @mixin atSmall {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      grid-template-rows: auto auto;
+      align-items: start;
+      column-gap: 2rem;
+      row-gap: 1rem;
+      h3 {
+        text-align: left;
+        margin: 0;
+      }
+
+      img {
+        grid-row: span 2;
+      }
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+
+/* TESTIMONIAL SECTION */
+.testimonials {
+  /* background: url('/assets/images/our-start.jpg') top center no-repeat; */
+  background-image: linear-gradient(to right bottom, rgb(185, 204, 230), rgb(90, 116, 146));
+  h2 {
+    img {
+      width: 4rem;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 2rem;
+    row-gap: 12rem;
+    margin-top: 13rem;
+  }
+
+  &__item {
+    max-width: 35rem;
+    background-color: #fff;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 8rem;
+    border-radius: 1rem;
+  }
+  &__img {
+    width: 15rem;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+  }
+  &__name {
+    color: $color-primary;
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  &__count {
+    color: $color-orange;
+    font-size: 1.8rem;
+    margin: 0;
+  }
+}
+
+.footer {
+  background-color: $color-primary;
+  color: rgb(199, 199, 199);
+  text-align: center;
+  font-weight: 300;
+
+  @mixin atMedium {
+    p {
+      display: inline-block;
+      margin-right: 2rem;
+    }
+  }
+
+  .section-wrapper {
+    padding-block: 2rem;
   }
 }
